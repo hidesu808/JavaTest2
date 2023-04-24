@@ -57,8 +57,8 @@ public class App {
         for(int i = 0; i < origin.size(); i++) {
             double temp = distance(origin.get(i), destination);
             if (temp == min) {
-                System.out.println("The closest point with the distance of "
-                 + min +" meter is: ");
+                System.out.println("The closest point with a rough distance of "
+                 + min +" meter to " + destination.getName() + " is: ");
                 printCoordinates(origin.get(i));
             }
         }
