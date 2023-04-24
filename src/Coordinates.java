@@ -1,25 +1,25 @@
 public class Coordinates {
     String name;
-    private double lang;
+    private double lon;
     private double lat;
     
-    public Coordinates(String name, double lang, double lat) {
+    public Coordinates(String name, double lon, double lat) {
         this.name = name;
-        this.lang = lang;
+        this.lon = lon;
         this.lat = lat;
     }
 
     public Coordinates() {
         this.name = "Default";
-        this.lang = 0;
+        this.lon = 0;
         this.lat = 0;
     }
 
-    public double getLang() {
-        return lang;
+    public double getLon() {
+        return lon;
     }
-    public void setLang(double lang) {
-        this.lang = lang;
+    public void setLon(double lon) {
+        this.lon = lon;
     }
 
     public double getLat() {
@@ -32,5 +32,14 @@ public class Coordinates {
     public String getName() {
         return name;
     }
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String toString() {
+        return "Name: " + name + " Longitude: " + lon + " Latitude: " + lat;
+    }
+
+
 
 }
